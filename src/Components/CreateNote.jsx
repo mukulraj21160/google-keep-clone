@@ -97,9 +97,7 @@ const style = makeStyles((theme) => ({
   btn: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      // margin: "85px -15px 0px 0px",
-      paddingTop: "85px",
-      paddingRight: "15px",
+      margin: "85px -15px 0px 0px",
     },
     [theme.breakpoints.up("sm")]: {
       margin: "85px -15px 0px 0px",
