@@ -6,20 +6,20 @@ const style = makeStyles((theme) => ({
   Header: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      background: "#F7CD2E",
+      background: "#fab30a",
       display: "flex",
     },
     [theme.breakpoints.up("sm")]: {
-      background: "#F7CD2E",
+      background: "#fab30a",
       display: "flex",
     },
 
     [theme.breakpoints.up("md")]: {
-      background: "#F7CD2E",
+      background: "#fab30a",
       display: "flex",
     },
     [theme.breakpoints.up("lg")]: {
-      background: "#F7CD2E",
+      background: "#fab30a",
       display: "flex",
     },
   },

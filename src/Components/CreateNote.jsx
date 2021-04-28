@@ -19,29 +19,23 @@ const style = makeStyles((theme) => ({
       marginTop: "20px",
       display: "flex",
       justifyContent: "space-evenly",
-      // padding: "0px 15px 0px 15px",
-      width: "60%",
     },
     [theme.breakpoints.up("sm")]: {
       marginTop: "20px",
       display: "flex",
       justifyContent: "space-evenly",
-      // padding: "0px 15px 0px 15px",
-      width: "60%",
     },
 
     [theme.breakpoints.up("md")]: {
       marginTop: "20px",
       display: "flex",
       justifyContent: "space-evenly",
-      // padding: "0px 15px 0px 15px",
       width: "60%",
     },
     [theme.breakpoints.up("lg")]: {
       marginTop: "20px",
       display: "flex",
       justifyContent: "space-evenly",
-      // padding: "0px 15px 0px 15px",
       width: "60%",
     },
   },
@@ -97,10 +91,10 @@ const style = makeStyles((theme) => ({
   btn: {
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
-      margin: "85px -15px 0px 0px",
+      marginTop: "85px",
     },
     [theme.breakpoints.up("sm")]: {
-      margin: "85px -15px 0px 0px",
+      marginTop: "85px",
     },
 
     [theme.breakpoints.up("md")]: {
@@ -140,8 +134,8 @@ const CreateNote = ({ passNote }) => {
   return (
     <div className={classes.main}>
       <Grid container item>
-        <Grid item lg={4} md={2} sm={2} xs={1}></Grid>
-        <Grid item lg={4} md={8} sm={8} xs={10} className={classes.grid}>
+        <Grid item lg={4} md={2} sm={1} xs={1}></Grid>
+        <Grid item lg={4} md={8} sm={10} xs={10} className={classes.grid}>
           <Card className={classes.card}>
             <div>
               <TextField
@@ -157,7 +151,7 @@ const CreateNote = ({ passNote }) => {
                 name="content"
                 value={note.content}
                 onChange={handleNoteChange}
-                placeholder="Add Note Here..."
+                placeholder="Add Notes Here..."
               ></TextField>
             </div>
             <div>
@@ -171,7 +165,7 @@ const CreateNote = ({ passNote }) => {
             </div>
           </Card>
         </Grid>
-        <Grid item lg={4} md={2} sm={2} xs={1}></Grid>
+        <Grid item lg={4} md={2} sm={1} xs={1}></Grid>
       </Grid>
     </div>
   );

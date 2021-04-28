@@ -7,16 +7,24 @@ const style = makeStyles((theme) => ({
     fontFamily: theme.typography.body1.fontFamily,
     [theme.breakpoints.up("xs")]: {
       marginTop: "30px",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
     [theme.breakpoints.up("sm")]: {
       marginTop: "30px",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
 
     [theme.breakpoints.up("md")]: {
       marginTop: "30px",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
     [theme.breakpoints.up("lg")]: {
       marginTop: "30px",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
   },
   card: {
@@ -36,7 +44,6 @@ const AllNotes = (props) => {
         style={{
           width: "90%",
           backgroundColor: "#ffffff",
-          marginLeft: "20px",
           color: "black",
         }}
       >

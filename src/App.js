@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import AllNotes from "./Components/AllNotes";
 import CreateNote from "./Components/CreateNote";
-// import Footer from "./Components/Footer";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import { Grid, makeStyles } from "@material-ui/core";
 
 const style = makeStyles((theme) => ({
-  //
+  wrapper: {
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+  },
+  content: {
+    flexGrow: "1",
+  },
 }));
 
 const App = () => {
@@ -27,27 +34,29 @@ const App = () => {
   };
   const classes = style();
   return (
-    <div>
+    <div className={classes.wrapper}>
       <Header />
-      <CreateNote passNote={addNote} />
-      <div>
-        <Grid container item className={classes.main_grid}>
-          {item.map((val, index) => {
-            return (
-              <Grid item lg={3} md={3} sm={3} xs={6}>
-                <AllNotes
-                  key={index}
-                  id={index}
-                  title={val.title}
-                  content={val.content}
-                  deleteItem={onDelete}
-                />
-              </Grid>
-            );
-          })}
-        </Grid>
+      <div className={classes.content}>
+        <CreateNote passNote={addNote} />
+        <div>
+          <Grid container item className={classes.main_grid}>
+            {item.map((val, index) => {
+              return (
+                <Grid item lg={3} md={3} sm={3} xs={6}>
+                  <AllNotes
+                    key={index}
+                    id={index}
+                    title={val.title}
+                    content={val.content}
+                    deleteItem={onDelete}
+                  />
+                </Grid>
+              );
+            })}
+          </Grid>
+        </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
