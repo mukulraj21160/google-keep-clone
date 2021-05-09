@@ -3,22 +3,11 @@ import { makeStyles } from "@material-ui/core";
 
 const style = makeStyles((theme) => ({
   Footer: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      fontSize: "15px",
-      backgroundColor: "#fab30a",
-      textAlign: "center",
-      marginTop: "20px",
-      padding: "10px 0px 10px 0px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: "15px",
-      backgroundColor: "#fab30a",
-      textAlign: "center",
-      marginTop: "20px",
-      padding: "10px 0px 10px 0px",
-    },
-
+    fontSize: "15px",
+    backgroundColor: "#fab30a",
+    textAlign: "center",
+    marginTop: "20px",
+    padding: "10px 0px 10px 0px",
     [theme.breakpoints.up("md")]: {
       backgroundColor: "#fab30a",
       textAlign: "center",

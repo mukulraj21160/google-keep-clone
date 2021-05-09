@@ -4,18 +4,9 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 const style = makeStyles((theme) => ({
   main: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      marginTop: "30px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginTop: "30px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
-
+    marginTop: "30px",
+    display: "flex",
+    justifyContent: "space-evenly",
     [theme.breakpoints.up("md")]: {
       marginTop: "30px",
       display: "flex",
@@ -26,9 +17,6 @@ const style = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "space-evenly",
     },
-  },
-  card: {
-    //
   },
 }));
 

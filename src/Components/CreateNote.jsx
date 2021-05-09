@@ -10,46 +10,23 @@ import AddIcon from "@material-ui/icons/Add";
 
 const style = makeStyles((theme) => ({
   main: {
-    //
+    marginTop: "20px",
+    display: "flex",
+    justifyContent: "center",
+    [theme.breakpoints.up("md")]: {
+      marginTop: "20px",
+      display: "flex",
+      justifyContent: "center",
+    },
+    [theme.breakpoints.up("lg")]: {
+      marginTop: "20px",
+      display: "flex",
+      justifyContent: "center",
+    },
   },
-
   card: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
-
-    [theme.breakpoints.up("md")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "space-evenly",
-      width: "60%",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "space-evenly",
-      width: "60%",
-    },
-  },
-  grid: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      display: "flex",
-      justifyContent: "center",
-    },
-    [theme.breakpoints.up("sm")]: {
-      display: "flex",
-      justifyContent: "center",
-    },
-
+    display: "flex",
+    justifyContent: "center",
     [theme.breakpoints.up("md")]: {
       display: "flex",
       justifyContent: "center",
@@ -60,48 +37,37 @@ const style = makeStyles((theme) => ({
     },
   },
 
-  heading: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      textAlign: "left",
-      padding: "10px 10px 10px 10px",
-      fontWeight: "bold",
-      fontSize: "32px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      textAlign: "left",
-      padding: "10px 10px 10px 10px",
-      fontWeight: "bold",
-      fontSize: "32px",
-    },
-
+  text_Field: {
+    textAlign: "left",
+    padding: "10px",
+    fontWeight: "bold",
+    fontSize: "32px",
     [theme.breakpoints.up("md")]: {
       textAlign: "left",
-      padding: "10px 10px 10px 10px",
+      padding: "10px",
       fontWeight: "bold",
       fontSize: "32px",
     },
     [theme.breakpoints.up("lg")]: {
       textAlign: "left",
-      padding: "10px 10px 10px 10px",
+      padding: "10px",
       fontWeight: "bold",
       fontSize: "32px",
     },
   },
   btn: {
-    fontFamily: theme.typography.body1.fontFamily,
-    [theme.breakpoints.up("xs")]: {
-      marginTop: "85px",
-    },
-    [theme.breakpoints.up("sm")]: {
-      marginTop: "85px",
-    },
-
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-end",
     [theme.breakpoints.up("md")]: {
-      margin: "85px -15px 0px 0px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "flex-end",
     },
     [theme.breakpoints.up("lg")]: {
-      margin: "85px -15px 0px 0px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "flex-end",
     },
   },
 }));
@@ -132,14 +98,14 @@ const CreateNote = ({ passNote }) => {
 
   const classes = style();
   return (
-    <div className={classes.main}>
+    <div>
       <Grid container item>
-        <Grid item lg={4} md={2} sm={1} xs={1}></Grid>
-        <Grid item lg={4} md={8} sm={10} xs={10} className={classes.grid}>
+        <Grid item lg={4} md={4} xs={1}></Grid>
+        <Grid item lg={4} md={4} xs={10} className={classes.main}>
           <Card className={classes.card}>
             <div>
               <TextField
-                className={classes.heading}
+                className={classes.text_Field}
                 name="title"
                 value={note.title}
                 onChange={handleNoteChange}
@@ -147,25 +113,22 @@ const CreateNote = ({ passNote }) => {
               ></TextField>
               <br />
               <TextField
-                className={classes.heading}
+                className={classes.text_Field}
                 name="content"
                 value={note.content}
                 onChange={handleNoteChange}
                 placeholder="Add Notes Here..."
+                style={{ paddingBottom: "50px" }}
               ></TextField>
             </div>
-            <div>
-              <IconButton
-                className={classes.btn}
-                onClick={addEvent}
-                color="inherit"
-              >
+            <div className={classes.btn}>
+              <IconButton onClick={addEvent} color="inherit">
                 <AddIcon color="primary" />
               </IconButton>
             </div>
           </Card>
         </Grid>
-        <Grid item lg={4} md={2} sm={1} xs={1}></Grid>
+        <Grid item lg={4} md={4} xs={1}></Grid>
       </Grid>
     </div>
   );
