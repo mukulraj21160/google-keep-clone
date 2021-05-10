@@ -9,15 +9,9 @@ const style = makeStyles((theme) => ({
     marginTop: "20px",
     padding: "10px 0px 10px 0px",
     [theme.breakpoints.up("md")]: {
-      backgroundColor: "#fab30a",
-      textAlign: "center",
-      marginTop: "20px",
       padding: "15px 0px 15px 0px",
     },
     [theme.breakpoints.up("lg")]: {
-      backgroundColor: "#fab30a",
-      textAlign: "center",
-      marginTop: "20px",
       padding: "15px 0px 15px 0px",
     },
   },

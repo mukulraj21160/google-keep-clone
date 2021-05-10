@@ -7,16 +7,6 @@ const style = makeStyles((theme) => ({
     marginTop: "30px",
     display: "flex",
     justifyContent: "space-evenly",
-    [theme.breakpoints.up("md")]: {
-      marginTop: "30px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginTop: "30px",
-      display: "flex",
-      justifyContent: "space-evenly",
-    },
   },
 }));
 

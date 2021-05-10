@@ -6,14 +6,6 @@ const style = makeStyles((theme) => ({
   Header: {
     background: "#fab30a",
     display: "flex",
-    [theme.breakpoints.up("md")]: {
-      background: "#fab30a",
-      display: "flex",
-    },
-    [theme.breakpoints.up("lg")]: {
-      background: "#fab30a",
-      display: "flex",
-    },
   },
   heading: {
     textAlign: "left",
@@ -22,39 +14,25 @@ const style = makeStyles((theme) => ({
     padding: "10px 10px 10px 10px",
     marginTop: "4px",
     [theme.breakpoints.up("md")]: {
-      textAlign: "left",
-      fontWeight: "bold",
       fontSize: "25px",
-      padding: "10px 10px 10px 10px",
       marginTop: "8px",
     },
     [theme.breakpoints.up("lg")]: {
-      textAlign: "left",
-      fontWeight: "bold",
       fontSize: "25px",
-      padding: "10px 10px 10px 10px",
       marginTop: "8px",
     },
   },
   logo: {
     width: "30px",
     height: "24px",
-    marginLeft: "12px",
-    marginTop: "12px",
-    marginBottom: "12px",
+    margin: "12px 0px 12px 12px",
     [theme.breakpoints.up("md")]: {
       width: "60px",
       height: "48px",
-      marginLeft: "12px",
-      marginTop: "12px",
-      marginBottom: "12px",
     },
     [theme.breakpoints.up("lg")]: {
       width: "60px",
       height: "48px",
-      marginLeft: "12px",
-      marginTop: "12px",
-      marginBottom: "12px",
     },
   },
 }));

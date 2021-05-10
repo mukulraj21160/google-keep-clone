@@ -13,28 +13,10 @@ const style = makeStyles((theme) => ({
     marginTop: "20px",
     display: "flex",
     justifyContent: "center",
-    [theme.breakpoints.up("md")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "center",
-    },
-    [theme.breakpoints.up("lg")]: {
-      marginTop: "20px",
-      display: "flex",
-      justifyContent: "center",
-    },
   },
   card: {
     display: "flex",
     justifyContent: "center",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-      justifyContent: "center",
-    },
-    [theme.breakpoints.up("lg")]: {
-      display: "flex",
-      justifyContent: "center",
-    },
   },
 
   text_Field: {
@@ -42,33 +24,11 @@ const style = makeStyles((theme) => ({
     padding: "10px",
     fontWeight: "bold",
     fontSize: "32px",
-    [theme.breakpoints.up("md")]: {
-      textAlign: "left",
-      padding: "10px",
-      fontWeight: "bold",
-      fontSize: "32px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      textAlign: "left",
-      padding: "10px",
-      fontWeight: "bold",
-      fontSize: "32px",
-    },
   },
   btn: {
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-end",
-    [theme.breakpoints.up("md")]: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "flex-end",
-    },
-    [theme.breakpoints.up("lg")]: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "flex-end",
-    },
   },
 }));
 
